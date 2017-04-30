@@ -12,7 +12,7 @@ api_url <- 'http://192.168.0.103:12345/ocpu/library/getstockapi/R/getStock.api/j
 
 # 輸入&輸出資料皆為json格式
 # 輸入參數
-# 1. date_range: 開始時間與結束時間
+# 1. date_range: 開始日期與結束日期
 # 2. stock: 股票編號
 api_data <- httr::POST(url = api_url, 
                        body = list(date_range = c("2017-01-02", "2017-04-28"), stock = "2330"), 
