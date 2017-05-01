@@ -1,7 +1,7 @@
 # 台灣證交所 - 個股日成交資訊(https://goo.gl/SyUJFi)
 
 測試環境 ubuntu 14.04
-1. 使用R web api取得資料步驟:
+1. 使用R web api取得資料步驟:\n
 1.1 安裝getstock套件(api資料夾) - getstock_0.1.0.tar.gz。
 1.2 用Terminal執行opencpu.R，啟動opencpu api server。
 防止port被佔用(lsof -t -i :12345 | xargs kill)
