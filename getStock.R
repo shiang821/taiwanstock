@@ -122,7 +122,7 @@ for (i in 1:nrow(date_range)){
   click_query_button <- remDr$findElement(using = 'xpath', value = '//input[@name = "query-button"]')
   click_query_button$clickElement()
 
-  # 1. paser table for web browser
+  # 1. parser table for web browser
   paser_names <- remDr$findElement(using = 'xpath', value = '//*[@id="main-content"]/table/thead/tr[2]')
   col_names <- paser_names$getElementText()[[1]] %>% strsplit(., split = "\\s") %>% extract2(1)
   paser_tables <- remDr$findElement(using = 'xpath', value = '//*[@id="main-content"]/table/tbody')
