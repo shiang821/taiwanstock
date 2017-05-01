@@ -6,7 +6,8 @@
 1.1 安裝getstock套件(api資料夾) - getstock_0.1.0.tar.gz。  
 1.2 用Terminal執行opencpu.R，啟動opencpu api server。(timeout 90s)  
 防止port被佔用(lsof -t -i :12345 | xargs kill)  
-1.3 執行test_script.R測試API是否可正常運作。  
+1.3 執行test_script.R測試API是否可正常運作。  
+備註: RSelenium server port預設4567，若使用中可用(lsof -t -i :4567 | xargs kill)解除。 
 
 2. 使用getStock.R取得資料  
 2.1 Terminal版本 - 在Terminal下參數執行，後續可用crontab做定期排程。  
