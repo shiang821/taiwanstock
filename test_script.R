@@ -8,7 +8,7 @@ library(jsonlite)
 # 套件名稱: getstockapi
 # api名稱: getStock.api
 # api位置
-api_url <- 'http://192.168.0.103:12345/ocpu/library/getstockapi/R/getStock.api/json'
+api_url <- 'http://192.168.0.102:12345/ocpu/library/getstockapi/R/getStock.api/json'
 
 # 輸入&輸出資料皆為json格式
 # 輸入參數
